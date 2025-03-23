@@ -40,11 +40,14 @@ Azure AI Services are cloud-based services that encapsulate artificial intellige
 The Azure AI services APIs are REST-based, so you can consume them by submitting JSON requests over HTTP. In this example, you'll explore a console application that uses the **Language** REST API to perform language detection; but the basic principle is the same for all of the APIs supported by the Azure AI Services resource.
 
 
-2. View the contents of the **rest-client** folder, and note that it contains a file for configuration settings:
+2. View the contents of the **rest-client** folder, and add a file called ".env" to store your configuration settings (endpoint and key which is sensitive):
 
-    - **Python**: .env
+      Create and open the .env configuration file and update the configuration values it contains to reflect the **endpoint** and an authentication **key** for your Azure AI services resource. Save your changes.
 
-    Open the configuration file and update the configuration values it contains to reflect the **endpoint** and an authentication **key** for your Azure AI services resource. Save your changes.
+      You will need to add the following lines:
+
+      AI_SERVICE_ENDPOINT="insert your endpoint here"
+      AI_SERVICE_KEY="insert your key here"
 
 3. Note that the **pyhton-rest-call** folder contains a code file for the client application:
 
